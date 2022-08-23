@@ -4,7 +4,12 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "module": "CommonJS",
-    "strict": true
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist"
   },
-  "files": ["bin/index.ts", "./lib"]
+  "include": ["./bin", "./lib"],
+  "exclude": ["dist", "node_modules"]
 }
