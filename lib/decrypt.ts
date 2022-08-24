@@ -2,7 +2,7 @@ import Web3 from "web3"
 
 import type { Account, EncryptedKeystoreV3Json } from "web3-core/types"
 
-export function decrypt(
+export function decryptKeyFile(
   keyFile: EncryptedKeystoreV3Json,
   password: string
 ): Account {
