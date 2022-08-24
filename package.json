@@ -1,6 +1,6 @@
 {
   "name": "@nkuba/eth-helper",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/lib/index.js",
   "scripts": {
