@@ -18,21 +18,21 @@ program
   .command("extract-private-key")
   .description("Extracts private key from ethereum key file.")
   .requiredOption(
-    "-k --key-file-path <path>",
+    "-k, --key-file-path <path>",
     "path to the encrypted ethereum key file"
   )
   .requiredOption(
-    "-p --password-file-path <path>",
+    "-p, --password-file-path <path>",
     "path to the file containing password to the ethereum key file"
   )
   .requiredOption(
-    "-o --output <path>",
+    "-o, --output <path>",
     "path to a file where an extracted private key will be stored"
   )
-  .action((name, options, command) => {
-    const keyFilePath: string = options.keyFilePath as string
-    const passwordFilePath: string = options.passwordFilePath as string
-    const outputFilePath: string = options.output as string
+  .action((options) => {
+    const keyFilePath: string = options.keyFilePath
+    const passwordFilePath: string = options.passwordFilePath
+    const outputFilePath: string = options.output
 
     console.log(`extracting private key from key file: ${keyFilePath}`)
 
